@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "Big Sister",
+  "description": "This extension uses facial recognition to detect the emotions of the user and provide assistance when frustration is detected.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "test.html"
+  },
+
+  "permissions": [
+    "notifications",
+    "activeTab",
+    "storage"
+  ],
+
+  "options_page": "options.html",
+  "background": { "scripts": ["background.js"] },
+
+  "web_accessible_resources": [
+    "48.png"
+  ]
+}
